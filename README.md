@@ -1,3 +1,6 @@
+Prequisites:
+ - Boto3
+
 Todo:
  - Manage instances by a filter
  - Manage instances by IPs

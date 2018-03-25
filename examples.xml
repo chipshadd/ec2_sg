@@ -1,0 +1,20 @@
+#Change and update the instance's SGs to equal the list of groups specified 
+- ec2_sg:
+    groups: sg-1051b46e, sg-0d46bd71
+    instanceid: i-014eda615e472c9b2
+    region: us-east-1
+    action: set
+
+#Remove a security group from an instance (does nothing if the security group is not already associated with the specified instance).
+- ec_sg:
+   groups: sg-1051b46e
+   instanceid: i-014eda615e472c9b2
+   region: us-east-1
+   action: remove
+
+#Append the list of security groups to multiple instances
+- ec_sg:
+   groups: sg-970f9352, sg-536fc349
+   instanceid: i-fbe0aa536fc349cbd, i-451ff5970f9357
+   region: us-west-2
+   action: add

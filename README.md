@@ -6,6 +6,7 @@ Todo:
  - Manage instances by IPs
 
 ---
+```
 module: ec2_sg
 short_description: Manage instance security groups
 description:
@@ -33,4 +34,4 @@ options:
 			- If C(remove), the specified list of security groups will be remove from the specified list of instance(s).
 		required: true
 		choices: [set, add, remove]
-
+```
